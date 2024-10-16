@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TIENDA A&E</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <section id="mainForm">
+      <h3>TIENDA A&E</h3>
+      <h5>Precios: <span id="mainForm_lblPrecios"></span></h5>
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Cedula</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Monto a pagar</th>
+        </tr>
+      </table>
+      <h5>Ingreso Total del día: Bs.<span id="mainForm_lblIngresoTotal">?</span></h5>
+      <h5>Producto Mas Vendido: <span id="mainForm_lblProductoMasVendido">?</span></h5>
+      <button id="mainForm_btAgregar">Agregar Compra</button>
+    </section>
+
+    <section id="clienteForm">
+      <h3>Datos de la compra</h3>
+
+      <input type="text" id="clienteForm_inCedula" placeholder="Cedula"></input>
+
+      <input type="text" id="clienteForm_inProducto" placeholder="producto"></input>
+
+      <input type="text" id="clienteForm_inCantidad"  placeholder="Cantidad"></input>
+      <button id="clienteForm_btAceptar">Aceptar</button> 
+    </section>
+  </body>
+  <script type="module">
+    import Cl_controlador from "./js/Cl_Controlador.js";
+    new Cl_controlador()
+ </script>
+</html>
